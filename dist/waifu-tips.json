@@ -168,7 +168,7 @@
     "selector": ".vsubmit",
     "text": ["评论没有审核，要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
   }, {
-      "selector": "#waifu-streamlit-input-box",
+      "selector": "st-emotion-cache-b95f0i eu6p4el4",
       "text": ["想说什么就大胆讲出来吧！", "不如让我来帮你完成这个问题？", "要输入问题了对吧？我在听哦～"]
   },{
     "selector": ".vcontent",
@@ -181,7 +181,7 @@
     "selector": ".vsubmit",
     "text": ["输入验证码就可以提交评论啦～"]
   },{
-      "selector": "#waifu-streamlit-input-box",
+      "selector": "st-emotion-cache-b95f0i eu6p4el4",
       "text": ["输入框被你点开啦，快来和我聊聊天！", "要和我说点什么嘛～"]
     }],
   "seasons": [{
