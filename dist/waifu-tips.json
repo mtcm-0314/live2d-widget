@@ -168,6 +168,9 @@
     "selector": ".vsubmit",
     "text": ["评论没有审核，要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
   }, {
+      "selector": "#waifu-streamlit-input-box",
+      "text": ["想说什么就大胆讲出来吧！", "不如让我来帮你完成这个问题？", "要输入问题了对吧？我在听哦～"]
+  },{
     "selector": ".vcontent",
     "text": ["哇，快看看这个精彩评论！", "如果有疑问，请尽快留言哦～"]
   }],
@@ -177,7 +180,10 @@
   }, {
     "selector": ".vsubmit",
     "text": ["输入验证码就可以提交评论啦～"]
-  }],
+  },{
+      "selector": "#waifu-streamlit-input-box",
+      "text": ["输入框被你点开啦，快来和我聊聊天！", "要和我说点什么嘛～"]
+    }],
   "seasons": [{
     "date": "01/01",
     "text": "<span>元旦</span>了呢，新的一年又开始了，今年是{year}年～"
