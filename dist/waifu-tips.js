@@ -15,4 +15,12 @@ function bindAllLive2DMessages() {
     }
   });
 }
+// 延迟加载（保证元素出现后才绑定）
+const observer = new MutationObserver(() => {
+  if (document.querySelector("[data-baseweb='textarea']")) {
+    bindAllLive2DMessages();
+    observer.disconnect();
+  }
+});
+observer.observe(document.body, { childList: true, subtree: true });
 //# sourceMappingURL=waifu-tips.js.map
