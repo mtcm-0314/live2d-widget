@@ -294,3 +294,39 @@
     "message": "是 Hiyori 哦 ~"
   }]
 }
+<script>
+// 新增监听 Streamlit 的 chat_input 输入框事件（需要 JS 注入方式执行）
+window.addEventListener("DOMContentLoaded", function () {
+  const waitForInputBox = setInterval(() => {
+    const inputBox = parent.document.querySelector('textarea[data-testid="stChatInput"]');
+    const waifuTips = parent.document.getElementById('waifu-tips');
+
+    if (inputBox && waifuTips) {
+      clearInterval(waitForInputBox);
+
+      const thinkingPhrases = [
+        "正在思考中…",
+        "让我想想…",
+        "稍等片刻～",
+        "这个问题有点难呢…",
+        "让我翻翻笔记…"
+      ];
+
+      inputBox.addEventListener("input", () => {
+        const text = inputBox.value.trim();
+        if (text !== "") {
+          const msg = thinkingPhrases[Math.floor(Math.random() * thinkingPhrases.length)];
+          waifuTips.innerHTML = msg;
+          waifuTips.classList.add("waifu-tips-active");
+        }
+      });
+
+      inputBox.addEventListener("blur", () => {
+        waifuTips.innerHTML = "";
+        waifuTips.classList.remove("waifu-tips-active");
+      });
+    }
+  }, 500);
+});
+
+</script>
